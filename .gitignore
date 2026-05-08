@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+.env*.local
+.vercel
+*.log
+# Generated at build time by scripts/build-icons.mjs from embedded base64
+public/icons/*.png
+public/apple-touch-icon.png
