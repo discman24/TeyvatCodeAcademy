@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Teyvat Code Academy — Master Python through 7 elemental regions. A Genshin-inspired programming RPG (original IP)." />
+    <meta name="theme-color" content="#f39c12" />
+    <meta name="color-scheme" content="dark" />
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Teyvat Academy" />
+    <!-- Icons: explicit sizes for iOS + Android pickers -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+    <!-- Manifest will be auto-injected by vite-plugin-pwa as /manifest.webmanifest. NO static manifest. -->
+    <title>Teyvat Code Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      :root { --gold: #f39c12; --bg: #0d1117; --surf: #161b22; }
+      html, body { margin: 0; background: var(--bg); color: #e8e8e8; font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+      body { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+      .font-display { font-family: 'Cinzel', Georgia, serif; }
+      .font-mono, code, pre, textarea.code { font-family: 'JetBrains Mono', Menlo, monospace; }
+      ::selection { background: var(--gold); color: #000; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
